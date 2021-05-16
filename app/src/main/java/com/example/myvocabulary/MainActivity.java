@@ -69,19 +69,10 @@ public class MainActivity extends AppCompatActivity {
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
 
-
-
                 InputStream stream = connection.getInputStream();
                 reader = new BufferedReader(new InputStreamReader(stream));
 
 
-
-//                StringBuffer buffer = new StringBuffer();
-//                String line = "";
-//
-//                while ((line = reader.readLine()) != null)
-//                    buffer.append(line).append("\n");
-//                buffer.toString();
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
@@ -97,10 +88,9 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-
             Elements element = document.getElementsByClass("t_inline_en");
-
             answer.setText(element.text());
+
 
             if (connection != null)
                 connection.disconnect();
@@ -111,20 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             }
-
-
             return  null;
-
-
-        }
-        @Override
-        protected void  onPostExecute (String answer) {
-            super.onPostExecute(answer);
-
-
-
-
-
         }
     }
 }

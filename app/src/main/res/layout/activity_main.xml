@@ -30,6 +30,7 @@
         android:layout_marginTop="190sp"
         android:layout_marginHorizontal="50sp"
         android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/text"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/editText"
@@ -40,10 +41,11 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="130sp"
+        android:layout_marginHorizontal="100sp"
         android:layout_marginTop="300sp"
         android:text="@string/btn"
         app:backgroundTint="@color/btn"
+        android:textColor="@color/black"
         app:elevation="24sp" />
 
     <TextView
@@ -52,6 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="70sp"
         android:layout_marginTop="450sp"
+
+        android:textColor="@color/text"
 
 
         android:textSize="25sp" />
